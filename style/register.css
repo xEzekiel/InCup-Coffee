@@ -6,94 +6,159 @@
     scroll-behavior: smooth;
 }
 
-#register{
-    background:#14463A;
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    overflow-y: hidden;
- }
-
- .h1-design {
-    font-size: 80px;
-    line-height: 104px;
-    text-align: center;
-    color: #FBEEE5;
- }
-
- .box-border{
-    box-sizing: border-box;
-    border: 1px solid #FBEEE5;
-    border-radius: 30px;
-    position: absolute;
-    width: 100vh;
-    height: 620px;
-    left: 317px;
-    top: 150px;
- }
-
-.row {
-    text-align: center;
+.register {
+  background:#14463A;
+  position: absolute;
+  min-height: 100vh;
+  width: 100%;
+  overflow-y: hidden;
+  
 }
 
- .emailfield-design {
-    color: #FBEEE5;
-    font-size: 12px;
-    position: relative;
-    right: 190px;
- }
+.register p {
+  text-align: center;
+  color: #FBEEE5;
+  font-size: clamp(20px, 10vw, 35px);
+  padding: 50px;
+}
 
- .email{
-    width: 426px;
+.child {
+  width: 90%;
+  min-height: 70vh;
+  padding: 10%;
+  border: 1px solid #FBEEE5;
+  border-radius: 30px;
+  margin: .5em auto;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+
+.emailfield-design {
+  color: #FBEEE5;
+  font-size: 12px;
+  margin-right: 380px;
+}
+
+.email{
+  width: 426px;
+  height: 58px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.passwordfield-design {
+  color: #FBEEE5;
+  font-size: 12px;
+  margin-right: 350px;
+}
+
+.cpasswordfield-design {
+  color: #FBEEE5;
+  font-size: 12px;
+  margin-right: 290px;
+}
+
+.loginfield-design {
+  width: 30%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FBEEE5;
+  color: #14463A;
+  border-radius: 15px;
+}
+.account-design {
+  color: #FBEEE5;
+  font-size: 10px;
+  text-align: center;
+}
+
+.register-design {
+  color: #FBEEE5;
+  font-size: 12px;
+  text-align: center;
+  
+}
+
+a {
+  text-decoration: none;
+  color: #FBEEE5;
+}
+a:hover {
+ color: green;
+}
+
+@media only screen and (max-width:560px) {
+  .email{
+    width: 350px;
     height: 58px;
     background: #FFFFFF;
+    float: left;
     border: 1px solid #000000;
     border-radius: 15px;
     padding: 20px;
- }
+  }
+}
 
- .passwordfield-design {
-    color: #FBEEE5;
-    font-size: 12px;
-    position: relative;
-    right: 175px;
- }
-
- .cpasswordfield-design {
-    color: #FBEEE5;
-    font-size: 12px;
-    position: relative;
-    right: 145px;
- }
-
- .loginfield-design {
-    width: 279px;
-    height: 79px;
-    background: #FBEEE5;
-    color: #14463A;
+@media only screen and (max-width:465px) {
+  .email{
+    width: 300px;
+    height: 58px;
+    background: #FFFFFF;
+    float: left;
+    border: 1px solid #000000;
     border-radius: 15px;
-    position: relative;
-    left: 250px;
- }
+    padding: 20px;
+  }
+}
 
- .account-design {
-    color: #FBEEE5;
-    font-size: 10px;
-    text-align: center;
- }
- 
- .register-design {
-    color: #FBEEE5;
-    font-size: 12px;
-    text-align: center;
-    
- }
+@media only screen and (max-width:401px) {
+  .email{
+    width: 250px;
+    height: 58px;
+    background: #FFFFFF;
+    float: left;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    padding: 20px;
+  }
+}
 
- a {
-    text-decoration: none;
-    color: #FBEEE5;
- }
+@media only screen and (max-width:330px) {
+  .email{
+    width: 200px;
+    height: 58px;
+    background: #FFFFFF;
+    float: left;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    padding: 20px;
+  }
+  .loginfield-design {
+    width: 50%;
+  }
+}
 
- a:hover {
-   color: green;
- }
+@media only screen and (max-width:255px) {
+  .email{
+    width: 150px;
+    height: 58px;
+    background: #FFFFFF;
+    float: left;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    padding: 20px;
+  }
+  .loginfield-design {
+    width: 50%;
+  }
+}

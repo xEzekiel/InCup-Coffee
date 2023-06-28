@@ -51,7 +51,6 @@
 
 }
 
-
 @media only screen and (max-width: 1336px) {
    .clients-row img {
       width: 15rem;
@@ -65,9 +64,20 @@
 }
 
 @media only screen and (max-width: 900px) {
+   .clients-row img {
+      width: 10rem;
+   }
+}
+
+@media only screen and (max-width: 805px) {
+   .clients-row img {
+      width: 8rem;
+   }
+}
+
+@media only screen and (max-width: 670px) {
    .clients-row {
       display: flex;
-      flex-direction: column;
-      width: 100%;
+      flex-direction: column; 
    }
 }

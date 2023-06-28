@@ -9,21 +9,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="..\stylev2\cart.css">
+    <link rel="stylesheet" href="..\stylev2\cart2.css">
     
 </head>
 <body>
-    <div class="cart">
+    <div class="cart2">
         <a href="../view/main.html"><i class="fa fa-solid fa-arrow-left"></i></a>
         <h2>Review your cart</h2>
             <hr class="new1">
         <p>Free delivery and free returns.</p>
         <div class="product-details">
             <img src = "..\assets\products\liberica.png" style="margin-left: 20px;">
-            <p style="margin-left: -20px;">Liberica Coffee<br>
+            <p>Liberica Coffee<br>
                 <br>
                 <div class="quantity-input" >
-                    <p class="quantity" style="margin-left: 20px;">Quatity: </p>
+                    <p class="quantity">Quantity: </p>
                     <button class="quantity-btn" onclick="decrement()">-</button>
                     <span class="quantity-value" id="quantity">1</span>
                     <button class="quantity-btn" onclick="increment()">+</button>
@@ -39,14 +39,14 @@
               <option value="2">GCash</option>
             </select>
         </div>
-            <div style="display: flex;">
+        <div style="display: flex;" class="sub">
             <p>Sub Total: </p>
-            <p style="margin-left: 1100px;">₱ 350.00</p>
+            <p class="sub-text">₱ 350.00</p>
             </div>
         <hr class="new1">
         <div style="display: flex;">
             <p style="font-size: clamp(10px, 10vw, 25px);">Total: </p>
-            <p style="margin-left: 1050px; font-size: clamp(10px, 10vw, 25px); ">₱ 350.00</p>
+            <p class="total-text">₱ 350.00</p>
             </div>
         <br>
         <br>

@@ -42,6 +42,12 @@
    
 }
 
+.navbar-rows {
+   display: flex;
+   flex-direction: row;
+   
+}
+
 .navbar-row a{
    color: var(--text-color);
    font-weight: bold;
@@ -63,6 +69,10 @@
 }
 
 .menubar{
+   display: none;
+ }
+
+ .navbar-rows{
    display: none;
  }
 
@@ -127,18 +137,18 @@
 
  }
 
- .cart {
+ .cart-icon {
    display: flex;
    width: 10%;
    height: 4rem;
    justify-content: center;
    align-items: center;
  }
-.cart a {
+.cart-icon a {
    width: 100%;
    height: auto;
 }
-.cart span {
+.cart-icon span {
    background-color: red;
    border-radius: 50%;
    display: flex;
@@ -156,17 +166,57 @@
    margin-right: 40px;
  }
 
+ .sidenav {
+   height: 100%;
+   width: 0;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color: #14463A;
+   overflow-x: hidden;
+   transition: 0.5s;
+   padding-top: 60px;
+ }
+ 
+ .sidenav a {
+   padding: 8px 8px 8px 32px;
+   text-decoration: none;
+   font-size: 25px;
+   color: #818181;
+   display: block;
+   transition: 0.3s;
+ }
+ 
+ .sidenav a:hover {
+   color: #f1f1f1;
+ }
+ 
+ .sidenav .closebtn {
+   position: absolute;
+   top: 0;
+   right: 25px;
+   font-size: 36px;
+   margin-left: 50px;
+ }
+ 
 
  @media screen and (max-width: 990px ) {
    .menubar{
      display: block;
+     float: right;
+   }
+   
+   .logo {
+      display: none;
    }
    .navbar-row{
      display: none;
    }
-   .cart {
+   .cart-icon {
       display: none;
    }
+
  }
 
  @media screen and (max-width: 960px ) {
@@ -195,6 +245,22 @@
 
 
  footer {
-   height: 5vh;
+   height: 10vh;
    background-color: #14463A;
+   text-align: center;
  }
+ 
+ footer img{
+   padding: 3px;
+   margin-left: 20px;
+   cursor: pointer;
+ }
+ footer p {
+   padding: 5px;
+   background-color: #14463A;
+   color: #FBEEE5;
+   font-weight: 400;
+   font-size: clamp(5px, 10vw, 10px);
+ }
+
+

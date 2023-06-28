@@ -60,7 +60,7 @@
    height: auto;
    position: absolute;
    margin-left: 55%;
-   margin-top: 15%;
+   margin-top: 22%;
    display: block;
 
  }
@@ -74,7 +74,7 @@
 .btn {
    background-color: #14463A;
    color: #FBEEE5;
-   width: 20%;
+   width: 30%;
    height: 7vh;
    border-radius: 15px;
    border-color: #14463A;
@@ -119,4 +119,12 @@
       display: none;
    };
    
+ }
+ 
+ @media screen and (max-width: 359px) {
+   .btn {
+      background-color: #14463A;
+      color: #FBEEE5;
+      width: 50%;
+   }
  }
